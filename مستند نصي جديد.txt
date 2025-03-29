@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عجلة الأسماء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>عجلة الأسماء</h1>
+        
+        <div id="wheel" class="wheel"></div>
+
+        <h2>اختيار ترتيب السحب:</h2>
+        <select id="orderSelect">
+            <option value="asc">من 1 إلى 10</option>
+            <option value="desc">من 10 إلى 1</option>
+        </select>
+
+        <button id="spinButton">دور العجلة</button>
+        <input type="text" id="nameInput" placeholder="أضف اسمًا">
+        <button id="addButton">أضف</button>
+        <button id="setLastTenButton">تحديد آخر 10 أسماء</button>
+        <button id="resetButton">إعادة تعيين</button>
+
+        <h2>الأسماء المدخلة:</h2>
+        <ul id="nameList"></ul>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
