@@ -1,41 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عجلة الأسماء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>عجلة الأسماء</h1>
 
+        <div id="wheel" class="wheel"></div>
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
+        <h2>اختيار ترتيب السحب:</h2>
+        <select id="orderSelect">
+            <option value="asc">من 1 إلى 10</option>
+            <option value="desc">من 10 إلى 1</option>
+        </select>
 
-.container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-}
+        <button id="spinButton">دور العجلة</button>
+        <input type="text" id="nameInput" placeholder="أضف اسمًا">
+        <button id="addButton">أضف</button>
+        <button id="setLastTenButton">تحديد آخر 10 أسماء</button>
+        <button id="resetButton">إعادة تعيين</button>
 
-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px;
-}
+        <h2>الأسماء المدخلة:</h2>
+        <ul id="nameList"></ul>
+    </div>
 
-button:hover {
-    background-color: #45a049;
-}
-
-input {
-    padding: 10px;
-    font-size: 16px;
-    width: 200px;
-    margin: 10px;
-}
-
-select {
-    font-size: 16px;
-    padding: 10px;
-    margin: 10px;
-}
+    <script src="script.js"></script>
+</body>
+</html>
